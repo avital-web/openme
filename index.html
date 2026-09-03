@@ -1,0 +1,3132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My Love ❤️</title>
+
+   <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =========================================================
+   DESIGN
+   You normally DON'T need to change anything below here.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   VIDEO BACKGROUND
+   ===================================================== */
+
+.video-background {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -3;
+
+}
+
+
+/* =====================================================
+   DARK OVERLAY
+   ===================================================== */
+
+.video-overlay {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.38);
+
+    z-index: -2;
+
+}
+
+
+/* Main container */
+
+.container {
+    width: 92%;
+    max-width: 500px;
+
+    text-align: center;
+
+    padding: 35px 15px;
+}
+
+
+/* Header */
+
+.small-title {
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+
+    opacity: 0.9;
+}
+
+h1 {
+    font-size: 43px;
+
+    margin-bottom: 12px;
+
+    text-shadow:
+        0 4px 15px rgba(0,0,0,0.6);
+}
+
+.subtitle {
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* Card */
+
+.card {
+
+    background: rgba(255,255,255,0.94);
+
+    color: #333;
+
+    border-radius: 28px;
+
+    padding: 30px 24px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.4);
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+/* Day number */
+
+.day-number {
+
+    color: #a05a68;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+/* Surprise title */
+
+.card h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* Description */
+
+.description {
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 22px;
+
+}
+
+
+/* Open button */
+
+.open-button {
+
+    border: none;
+
+    background: #a05a68;
+
+    color: white;
+
+    padding: 15px 26px;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+.open-button:hover {
+
+    transform: scale(1.05);
+
+}
+
+.open-button:active {
+
+    transform: scale(0.96);
+
+}
+
+
+/* Surprise content */
+
+.surprise {
+
+    display: none;
+
+    margin-top: 20px;
+
+    animation: appear 0.7s ease;
+
+}
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* Message */
+
+.message {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 22px;
+
+    font-style: italic;
+
+}
+
+
+/* Images */
+
+.photo-gallery {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+.photo-gallery img {
+
+    width: 100%;
+
+    border-radius: 18px;
+
+    display: block;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.2);
+
+}
+
+
+/* Counter */
+
+.counter {
+
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    opacity: 0.85;
+
+}
+
+
+/* Floating hearts */
+
+.hearts {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+}
+
+.heart {
+
+    position: absolute;
+
+    bottom: -30px;
+
+    animation: floatHeart 10s linear forwards;
+
+    opacity: 0.4;
+
+}
+
+@keyframes floatHeart {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    15% {
+
+        opacity: 0.7;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .card {
+        padding: 25px 18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<!-- VIDEO BACKGROUND -->
+<video
+    class="video-background"
+    loop
+    autoplay
+    muted
+    playsinline
+>
+    <source src="assets/background.mp4" type="video/mp4">
+</video>
+
+<!-- DARK OVERLAY -->
+<div class="video-overlay"></div>
+
+<div class="hearts"></div>
+
+
+<div class="container">
+
+
+    <div class="small-title">
+        A little something for you
+    </div>
+
+
+    <h1>
+        For My Love ❤️
+    </h1>
+
+
+    <p class="subtitle">
+
+
+        a piece of me to you, everyday
+
+    </p>
+
+
+    <div class="card">
+
+
+        <div
+            class="day-number"
+            id="dayNumber">
+        </div>
+
+
+        <h2 id="title">
+        </h2>
+
+
+        <p
+            class="description"
+            id="description">
+        </p>
+
+
+        <button
+            class="open-button"
+            id="openButton"
+            onclick="openSurprise()">
+
+            Open today's surprise ❤️
+
+        </button>
+
+
+        <div
+            class="surprise"
+            id="surprise">
+
+
+            <p
+                class="message"
+                id="message">
+            </p>
+
+
+            <div
+                class="photo-gallery"
+                id="photoGallery">
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <p
+        class="counter"
+        id="counter">
+    </p>
+
+
+</div>
+
+
+
+<script>
+
+
+/* =========================================================
+   =========================================================
+
+   ⭐⭐⭐ CUSTOMIZE YOUR WEBSITE HERE ⭐⭐⭐
+
+   You ONLY need to edit this section.
+
+   =========================================================
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   1. START DATE
+   ---------------------------------------------------------
+
+   This is the day that becomes DAY 1.
+
+   Example:
+
+   September 1, 2026:
+
+   const START_DATE = "2026-09-01";
+
+   --------------------------------------------------------- */
+//go back
+const START_DATE = "2026-08-31  ";
+
+
+
+/* ---------------------------------------------------------
+   2. DAILY SURPRISES
+   ---------------------------------------------------------
+
+   You can add up to 180 days or more.
+
+   Each day can have:
+
+   • title
+   • message
+   • multiple pictures
+
+   --------------------------------------------------------- */
+
+
+const surprises = [
+
+    /* ================= DAY 1 ================= */
+
+    {
+        title: "Your first surprise 💌",
+
+        message:
+        "Hi babe! It is the first day of us apart, Just like the first date we had, this marks the first step in reaching our dreams together, I hope you are doing well. You know naman every time we are separated na mimiss kita. I hope this gift is enough for now. I learned and tried coding within days before I left. I know it is not much, but I hope you will enjoy this gift. Starting today, you can visit this site everyday to see what I have left for you. I love you so much. Para every day, you will feel na kasama mo ako even if we are miles apart from each other. This mini-website dedicated for you is my gift before I leave. I promise babawi ako once I get home. ❤️",
+
+        images: [
+            "assets/day1-1.jpg"
+        ]
+    },
+
+
+    /* ================= DAY 2 ================= */
+
+    {
+        title: "Missing you 🥺",
+
+        message:
+        "It is my second day babe, I miss you so much. I know I am writing this before ako pumunta sa Cebu but I know I am missing home and my home is where you are babe. How are you? I hope you are doing good babe sa studies mo. Never forget to study hard para matupad dreams natin. Please wait for me to come home. Chat me if nabasa mo na to. Hehe, labyu..",
+
+        images: [
+            "assets/day2.jpg"
+        ]
+    },
+
+
+    /* ================= DAY 3 ================= */
+
+    {
+        title: "A little memory 📸",
+
+        message:
+        "Third day na babe, kamusta ka na? I love you. Look at these images na nahalungkat ko HAHAHA, look at you so cute. I hope our future daughter becomes a mini-you. I love you babe.",
+
+        images: [
+            "assets/day3-1.jpg",
+            "assets/day3-2.jpg",
+            "assets/day3-3.jpg"
+        ]
+    },
+
+
+    /* ================= DAY 4 ================= */
+
+   {
+    title: "Today's reminder ❤️",
+
+    message:
+    "Always remember that I love you babe, Mag ingat ka always. Tutuparin pa natin dreams together. Always do your best and I am always proud of you.",
+
+    images: [
+        "assets/day5-1.jpg",
+    ]
+},
+
+
+    /* ================= DAY 5 ================= */
+
+    {
+        title: "Kamusta babe? 🌷",
+
+        message:
+        "I am missing you more than ever babe, Sana makauwi na ako agad so I can be with you ASAP as in ikaw una kong hahanapin when I land back in Bicol. Take care always babe, I love you. 🤗",
+
+    },
+
+
+    /* ================= DAY 6 ================= */
+
+    {
+        title: "May question ako 👀",
+
+        message:
+        "Pagbumalik na ako, ano gusto mo unang gawin natin together, I promise gagawin natin yan",
+
+        images: []
+    },
+
+
+    /* ================= DAY 7 ================= */
+
+    {
+        title: "One week already?! 💕",
+
+        message:
+        "It has been one week since I left Bicol and you know I miss you more than anything. I can't wait na makauwi and para mabigyan kita hug and kisses. I love you so much",
+
+        images: [
+            "assets/day7-1.jpg",
+            "assets/day7-2.jpg"
+        ]
+    },
+
+    /* ================= DAY 8 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day8-1.jpg",
+        "assets/day8-2.jpg"
+    ]
+},
+
+/* ================= DAY 9 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day9-1.jpg",
+        "assets/day9-2.jpg"
+    ]
+},
+
+/* ================= DAY 10 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day10-1.jpg",
+        "assets/day10-2.jpg"
+    ]
+},
+
+/* ================= DAY 11 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day11-1.jpg",
+        "assets/day11-2.jpg"
+    ]
+},
+
+/* ================= DAY 12 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day12-1.jpg",
+        "assets/day12-2.jpg"
+    ]
+},
+
+/* ================= DAY 13 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day13-1.jpg",
+        "assets/day13-2.jpg"
+    ]
+},
+
+/* ================= DAY 14 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day14-1.jpg",
+        "assets/day14-2.jpg"
+    ]
+},
+
+/* ================= DAY 15 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day15-1.jpg",
+        "assets/day15-2.jpg"
+    ]
+},
+
+/* ================= DAY 16 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day16-1.jpg",
+        "assets/day16-2.jpg"
+    ]
+},
+
+/* ================= DAY 17 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day17-1.jpg",
+        "assets/day17-2.jpg"
+    ]
+},
+
+/* ================= DAY 18 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day18-1.jpg",
+        "assets/day18-2.jpg"
+    ]
+},
+
+/* ================= DAY 19 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day19-1.jpg",
+        "assets/day19-2.jpg"
+    ]
+},
+
+/* ================= DAY 20 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day20-1.jpg",
+        "assets/day20-2.jpg"
+    ]
+},
+
+/* ================= DAY 21 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day21-1.jpg",
+        "assets/day21-2.jpg"
+    ]
+},
+
+/* ================= DAY 22 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day22-1.jpg",
+        "assets/day22-2.jpg"
+    ]
+},
+
+/* ================= DAY 23 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day23-1.jpg",
+        "assets/day23-2.jpg"
+    ]
+},
+
+/* ================= DAY 24 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day24-1.jpg",
+        "assets/day24-2.jpg"
+    ]
+},
+
+/* ================= DAY 25 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day25-1.jpg",
+        "assets/day25-2.jpg"
+    ]
+},
+
+/* ================= DAY 26 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day26-1.jpg",
+        "assets/day26-2.jpg"
+    ]
+},
+
+/* ================= DAY 27 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day27-1.jpg",
+        "assets/day27-2.jpg"
+    ]
+},
+
+/* ================= DAY 28 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day28-1.jpg",
+        "assets/day28-2.jpg"
+    ]
+},
+
+/* ================= DAY 29 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day29-1.jpg",
+        "assets/day29-2.jpg"
+    ]
+},
+
+/* ================= DAY 30 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day30-1.jpg",
+        "assets/day30-2.jpg"
+    ]
+},
+
+/* ================= DAY 31 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day31-1.jpg",
+        "assets/day31-2.jpg"
+    ]
+},
+
+/* ================= DAY 32 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day32-1.jpg",
+        "assets/day32-2.jpg"
+    ]
+},
+
+/* ================= DAY 33 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day33-1.jpg",
+        "assets/day33-2.jpg"
+    ]
+},
+
+/* ================= DAY 34 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day34-1.jpg",
+        "assets/day34-2.jpg"
+    ]
+},
+
+/* ================= DAY 35 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day35-1.jpg",
+        "assets/day35-2.jpg"
+    ]
+},
+
+/* ================= DAY 36 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day36-1.jpg",
+        "assets/day36-2.jpg"
+    ]
+},
+
+/* ================= DAY 37 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day37-1.jpg",
+        "assets/day37-2.jpg"
+    ]
+},
+
+/* ================= DAY 38 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day38-1.jpg",
+        "assets/day38-2.jpg"
+    ]
+},
+
+/* ================= DAY 39 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day39-1.jpg",
+        "assets/day39-2.jpg"
+    ]
+},
+
+/* ================= DAY 40 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day40-1.jpg",
+        "assets/day40-2.jpg"
+    ]
+},
+
+/* ================= DAY 41 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day41-1.jpg",
+        "assets/day41-2.jpg"
+    ]
+},
+
+/* ================= DAY 42 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day42-1.jpg",
+        "assets/day42-2.jpg"
+    ]
+},
+
+/* ================= DAY 43 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day43-1.jpg",
+        "assets/day43-2.jpg"
+    ]
+},
+
+/* ================= DAY 44 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day44-1.jpg",
+        "assets/day44-2.jpg"
+    ]
+},
+
+/* ================= DAY 45 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day45-1.jpg",
+        "assets/day45-2.jpg"
+    ]
+},
+
+/* ================= DAY 46 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day46-1.jpg",
+        "assets/day46-2.jpg"
+    ]
+},
+
+/* ================= DAY 47 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day47-1.jpg",
+        "assets/day47-2.jpg"
+    ]
+},
+
+/* ================= DAY 48 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day48-1.jpg",
+        "assets/day48-2.jpg"
+    ]
+},
+
+/* ================= DAY 49 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day49-1.jpg",
+        "assets/day49-2.jpg"
+    ]
+},
+
+/* ================= DAY 50 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day50-1.jpg",
+        "assets/day50-2.jpg"
+    ]
+},
+
+/* ================= DAY 51 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day51-1.jpg",
+        "assets/day51-2.jpg"
+    ]
+},
+
+/* ================= DAY 52 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day52-1.jpg",
+        "assets/day52-2.jpg"
+    ]
+},
+
+/* ================= DAY 53 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day53-1.jpg",
+        "assets/day53-2.jpg"
+    ]
+},
+
+/* ================= DAY 54 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day54-1.jpg",
+        "assets/day54-2.jpg"
+    ]
+},
+
+/* ================= DAY 55 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day55-1.jpg",
+        "assets/day55-2.jpg"
+    ]
+},
+
+/* ================= DAY 56 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day56-1.jpg",
+        "assets/day56-2.jpg"
+    ]
+},
+
+/* ================= DAY 57 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day57-1.jpg",
+        "assets/day57-2.jpg"
+    ]
+},
+
+/* ================= DAY 58 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day58-1.jpg",
+        "assets/day58-2.jpg"
+    ]
+},
+
+/* ================= DAY 59 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day59-1.jpg",
+        "assets/day59-2.jpg"
+    ]
+},
+
+/* ================= DAY 60 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day60-1.jpg",
+        "assets/day60-2.jpg"
+    ]
+},
+
+/* ================= DAY 61 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day61-1.jpg",
+        "assets/day61-2.jpg"
+    ]
+},
+
+/* ================= DAY 62 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day62-1.jpg",
+        "assets/day62-2.jpg"
+    ]
+},
+
+/* ================= DAY 63 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day63-1.jpg",
+        "assets/day63-2.jpg"
+    ]
+},
+
+/* ================= DAY 64 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day64-1.jpg",
+        "assets/day64-2.jpg"
+    ]
+},
+
+/* ================= DAY 65 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day65-1.jpg",
+        "assets/day65-2.jpg"
+    ]
+},
+
+/* ================= DAY 66 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day66-1.jpg",
+        "assets/day66-2.jpg"
+    ]
+},
+
+/* ================= DAY 67 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day67-1.jpg",
+        "assets/day67-2.jpg"
+    ]
+},
+
+/* ================= DAY 68 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day68-1.jpg",
+        "assets/day68-2.jpg"
+    ]
+},
+
+/* ================= DAY 69 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day69-1.jpg",
+        "assets/day69-2.jpg"
+    ]
+},
+
+/* ================= DAY 70 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day70-1.jpg",
+        "assets/day70-2.jpg"
+    ]
+},
+
+/* ================= DAY 71 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day71-1.jpg",
+        "assets/day71-2.jpg"
+    ]
+},
+
+/* ================= DAY 72 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day72-1.jpg",
+        "assets/day72-2.jpg"
+    ]
+},
+
+/* ================= DAY 73 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day73-1.jpg",
+        "assets/day73-2.jpg"
+    ]
+},
+
+/* ================= DAY 74 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day74-1.jpg",
+        "assets/day74-2.jpg"
+    ]
+},
+
+/* ================= DAY 75 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day75-1.jpg",
+        "assets/day75-2.jpg"
+    ]
+},
+
+/* ================= DAY 76 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day76-1.jpg",
+        "assets/day76-2.jpg"
+    ]
+},
+
+/* ================= DAY 77 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day77-1.jpg",
+        "assets/day77-2.jpg"
+    ]
+},
+
+/* ================= DAY 78 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day78-1.jpg",
+        "assets/day78-2.jpg"
+    ]
+},
+
+/* ================= DAY 79 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day79-1.jpg",
+        "assets/day79-2.jpg"
+    ]
+},
+
+/* ================= DAY 80 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day80-1.jpg",
+        "assets/day80-2.jpg"
+    ]
+},
+
+/* ================= DAY 81 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day81-1.jpg",
+        "assets/day81-2.jpg"
+    ]
+},
+
+/* ================= DAY 82 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day82-1.jpg",
+        "assets/day82-2.jpg"
+    ]
+},
+
+/* ================= DAY 83 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day83-1.jpg",
+        "assets/day83-2.jpg"
+    ]
+},
+
+/* ================= DAY 84 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day84-1.jpg",
+        "assets/day84-2.jpg"
+    ]
+},
+
+/* ================= DAY 85 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day85-1.jpg",
+        "assets/day85-2.jpg"
+    ]
+},
+
+/* ================= DAY 86 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day86-1.jpg",
+        "assets/day86-2.jpg"
+    ]
+},
+
+/* ================= DAY 87 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day87-1.jpg",
+        "assets/day87-2.jpg"
+    ]
+},
+
+/* ================= DAY 88 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day88-1.jpg",
+        "assets/day88-2.jpg"
+    ]
+},
+
+/* ================= DAY 89 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day89-1.jpg",
+        "assets/day89-2.jpg"
+    ]
+},
+
+/* ================= DAY 90 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day90-1.jpg",
+        "assets/day90-2.jpg"
+    ]
+},
+
+/* ================= DAY 91 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day91-1.jpg",
+        "assets/day91-2.jpg"
+    ]
+},
+
+/* ================= DAY 92 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day92-1.jpg",
+        "assets/day92-2.jpg"
+    ]
+},
+
+/* ================= DAY 93 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day93-1.jpg",
+        "assets/day93-2.jpg"
+    ]
+},
+
+/* ================= DAY 94 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day94-1.jpg",
+        "assets/day94-2.jpg"
+    ]
+},
+
+/* ================= DAY 95 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day95-1.jpg",
+        "assets/day95-2.jpg"
+    ]
+},
+
+/* ================= DAY 96 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day96-1.jpg",
+        "assets/day96-2.jpg"
+    ]
+},
+
+/* ================= DAY 97 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day97-1.jpg",
+        "assets/day97-2.jpg"
+    ]
+},
+
+/* ================= DAY 98 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day98-1.jpg",
+        "assets/day98-2.jpg"
+    ]
+},
+
+/* ================= DAY 99 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day99-1.jpg",
+        "assets/day99-2.jpg"
+    ]
+},
+
+/* ================= DAY 100 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day100-1.jpg",
+        "assets/day100-2.jpg"
+    ]
+},
+
+/* ================= DAY 101 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day101-1.jpg",
+        "assets/day101-2.jpg"
+    ]
+},
+
+/* ================= DAY 102 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day102-1.jpg",
+        "assets/day102-2.jpg"
+    ]
+},
+
+/* ================= DAY 103 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day103-1.jpg",
+        "assets/day103-2.jpg"
+    ]
+},
+
+/* ================= DAY 104 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day104-1.jpg",
+        "assets/day104-2.jpg"
+    ]
+},
+
+/* ================= DAY 105 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day105-1.jpg",
+        "assets/day105-2.jpg"
+    ]
+},
+
+/* ================= DAY 106 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day106-1.jpg",
+        "assets/day106-2.jpg"
+    ]
+},
+
+/* ================= DAY 107 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day107-1.jpg",
+        "assets/day107-2.jpg"
+    ]
+},
+
+/* ================= DAY 108 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day108-1.jpg",
+        "assets/day108-2.jpg"
+    ]
+},
+
+/* ================= DAY 109 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day109-1.jpg",
+        "assets/day109-2.jpg"
+    ]
+},
+
+/* ================= DAY 110 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day110-1.jpg",
+        "assets/day110-2.jpg"
+    ]
+},
+
+/* ================= DAY 111 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day111-1.jpg",
+        "assets/day111-2.jpg"
+    ]
+},
+
+/* ================= DAY 112 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day112-1.jpg",
+        "assets/day112-2.jpg"
+    ]
+},
+
+/* ================= DAY 113 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day113-1.jpg",
+        "assets/day113-2.jpg"
+    ]
+},
+
+/* ================= DAY 114 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day114-1.jpg",
+        "assets/day114-2.jpg"
+    ]
+},
+
+/* ================= DAY 115 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day115-1.jpg",
+        "assets/day115-2.jpg"
+    ]
+},
+
+/* ================= DAY 116 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day116-1.jpg",
+        "assets/day116-2.jpg"
+    ]
+},
+
+/* ================= DAY 117 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day117-1.jpg",
+        "assets/day117-2.jpg"
+    ]
+},
+
+/* ================= DAY 118 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day118-1.jpg",
+        "assets/day118-2.jpg"
+    ]
+},
+
+/* ================= DAY 119 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day119-1.jpg",
+        "assets/day119-2.jpg"
+    ]
+},
+
+/* ================= DAY 120 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day120-1.jpg",
+        "assets/day120-2.jpg"
+    ]
+},
+
+/* ================= DAY 121 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day121-1.jpg",
+        "assets/day121-2.jpg"
+    ]
+},
+
+/* ================= DAY 122 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day122-1.jpg",
+        "assets/day122-2.jpg"
+    ]
+},
+
+/* ================= DAY 123 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day123-1.jpg",
+        "assets/day123-2.jpg"
+    ]
+},
+
+/* ================= DAY 124 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day124-1.jpg",
+        "assets/day124-2.jpg"
+    ]
+},
+
+/* ================= DAY 125 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day125-1.jpg",
+        "assets/day125-2.jpg"
+    ]
+},
+
+/* ================= DAY 126 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day126-1.jpg",
+        "assets/day126-2.jpg"
+    ]
+},
+
+/* ================= DAY 127 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day127-1.jpg",
+        "assets/day127-2.jpg"
+    ]
+},
+
+/* ================= DAY 128 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day128-1.jpg",
+        "assets/day128-2.jpg"
+    ]
+},
+
+/* ================= DAY 129 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day129-1.jpg",
+        "assets/day129-2.jpg"
+    ]
+},
+
+/* ================= DAY 130 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day130-1.jpg",
+        "assets/day130-2.jpg"
+    ]
+},
+
+/* ================= DAY 131 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day131-1.jpg",
+        "assets/day131-2.jpg"
+    ]
+},
+
+/* ================= DAY 132 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day132-1.jpg",
+        "assets/day132-2.jpg"
+    ]
+},
+
+/* ================= DAY 133 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day133-1.jpg",
+        "assets/day133-2.jpg"
+    ]
+},
+
+/* ================= DAY 134 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day134-1.jpg",
+        "assets/day134-2.jpg"
+    ]
+},
+
+/* ================= DAY 135 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day135-1.jpg",
+        "assets/day135-2.jpg"
+    ]
+},
+
+/* ================= DAY 136 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day136-1.jpg",
+        "assets/day136-2.jpg"
+    ]
+},
+
+/* ================= DAY 137 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day137-1.jpg",
+        "assets/day137-2.jpg"
+    ]
+},
+
+/* ================= DAY 138 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day138-1.jpg",
+        "assets/day138-2.jpg"
+    ]
+},
+
+/* ================= DAY 139 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day139-1.jpg",
+        "assets/day139-2.jpg"
+    ]
+},
+
+/* ================= DAY 140 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day140-1.jpg",
+        "assets/day140-2.jpg"
+    ]
+},
+
+/* ================= DAY 141 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day141-1.jpg",
+        "assets/day141-2.jpg"
+    ]
+},
+
+/* ================= DAY 142 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day142-1.jpg",
+        "assets/day142-2.jpg"
+    ]
+},
+
+/* ================= DAY 143 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day143-1.jpg",
+        "assets/day143-2.jpg"
+    ]
+},
+
+/* ================= DAY 144 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day144-1.jpg",
+        "assets/day144-2.jpg"
+    ]
+},
+
+/* ================= DAY 145 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day145-1.jpg",
+        "assets/day145-2.jpg"
+    ]
+},
+
+/* ================= DAY 146 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day146-1.jpg",
+        "assets/day146-2.jpg"
+    ]
+},
+
+/* ================= DAY 147 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day147-1.jpg",
+        "assets/day147-2.jpg"
+    ]
+},
+
+/* ================= DAY 148 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day148-1.jpg",
+        "assets/day148-2.jpg"
+    ]
+},
+
+/* ================= DAY 149 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day149-1.jpg",
+        "assets/day149-2.jpg"
+    ]
+},
+
+/* ================= DAY 150 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day150-1.jpg",
+        "assets/day150-2.jpg"
+    ]
+},
+
+/* ================= DAY 151 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day151-1.jpg",
+        "assets/day151-2.jpg"
+    ]
+},
+
+/* ================= DAY 152 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day152-1.jpg",
+        "assets/day152-2.jpg"
+    ]
+},
+
+/* ================= DAY 153 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day153-1.jpg",
+        "assets/day153-2.jpg"
+    ]
+},
+
+/* ================= DAY 154 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day154-1.jpg",
+        "assets/day154-2.jpg"
+    ]
+},
+
+/* ================= DAY 155 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day155-1.jpg",
+        "assets/day155-2.jpg"
+    ]
+},
+
+/* ================= DAY 156 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day156-1.jpg",
+        "assets/day156-2.jpg"
+    ]
+},
+
+/* ================= DAY 157 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day157-1.jpg",
+        "assets/day157-2.jpg"
+    ]
+},
+
+/* ================= DAY 158 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day158-1.jpg",
+        "assets/day158-2.jpg"
+    ]
+},
+
+/* ================= DAY 159 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day159-1.jpg",
+        "assets/day159-2.jpg"
+    ]
+},
+
+/* ================= DAY 160 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day160-1.jpg",
+        "assets/day160-2.jpg"
+    ]
+},
+
+/* ================= DAY 161 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day161-1.jpg",
+        "assets/day161-2.jpg"
+    ]
+},
+
+/* ================= DAY 162 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day162-1.jpg",
+        "assets/day162-2.jpg"
+    ]
+},
+
+/* ================= DAY 163 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day163-1.jpg",
+        "assets/day163-2.jpg"
+    ]
+},
+
+/* ================= DAY 164 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day164-1.jpg",
+        "assets/day164-2.jpg"
+    ]
+},
+
+/* ================= DAY 165 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day165-1.jpg",
+        "assets/day165-2.jpg"
+    ]
+},
+
+/* ================= DAY 166 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day166-1.jpg",
+        "assets/day166-2.jpg"
+    ]
+},
+
+/* ================= DAY 167 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day167-1.jpg",
+        "assets/day167-2.jpg"
+    ]
+},
+
+/* ================= DAY 168 ================= */
+
+{
+    title: "",
+
+    message:
+    "",
+
+    images: [
+        "assets/day168-1.jpg",
+        "assets/day168-2.jpg"
+    ]
+},
+
+    
+
+];
+
+
+
+/* =========================================================
+   DON'T EDIT BELOW THIS LINE
+   ========================================================= */
+
+
+const startDate = new Date(START_DATE);
+
+const today = new Date();
+
+today.setHours(0,0,0,0);
+
+startDate.setHours(0,0,0,0);
+
+
+const difference =
+    Math.floor(
+        (today - startDate) /
+        (1000 * 60 * 60 * 24)
+    );
+
+
+const currentDay = difference + 1;
+
+
+const dayNumber =
+    document.getElementById("dayNumber");
+
+const title =
+    document.getElementById("title");
+
+const description =
+    document.getElementById("description");
+
+const openButton =
+    document.getElementById("openButton");
+
+const surprise =
+    document.getElementById("surprise");
+
+const message =
+    document.getElementById("message");
+
+const photoGallery =
+    document.getElementById("photoGallery");
+
+const counter =
+    document.getElementById("counter");
+
+
+
+function loadDay() {
+
+
+    /* Before Day 1 */
+
+    if (currentDay < 1) {
+
+        dayNumber.innerText =
+            "COMING SOON ❤️";
+
+        title.innerText =
+            "Something is waiting for you...";
+
+        description.innerText =
+            "Come back when the surprises begin.";
+
+        openButton.style.display =
+            "none";
+
+        return;
+    }
+
+
+
+    /* After all surprises */
+
+    if (currentDay > surprises.length) {
+
+        dayNumber.innerText =
+            "THE END ❤️";
+
+        title.innerText =
+            "You reached the end.";
+
+        description.innerText =
+            "But this isn't the end of us. I have plenty more surprises waiting for you in real life.";
+
+        openButton.style.display =
+            "none";
+
+        return;
+    }
+
+
+
+    const todaySurprise =
+        surprises[currentDay - 1];
+
+
+    dayNumber.innerText =
+        "DAY " + currentDay;
+
+
+    title.innerText =
+        todaySurprise.title;
+
+
+    description.innerText =
+        "Your surprise for today is waiting for you.";
+
+
+    counter.innerText =
+        "Day " +
+        currentDay +
+        " of " +
+        surprises.length;
+
+}
+
+
+
+function openSurprise() {
+
+
+    const todaySurprise =
+        surprises[currentDay - 1];
+
+
+    if (!todaySurprise) return;
+
+
+    /* Show message */
+
+    message.innerText =
+        todaySurprise.message;
+
+
+    /* Clear old images */
+
+    photoGallery.innerHTML = "";
+
+
+    /* Add today's images */
+
+    todaySurprise.images.forEach(
+        function(imagePath) {
+
+
+            const img =
+                document.createElement("img");
+
+
+            img.src =
+                imagePath;
+
+
+            img.alt =
+                "A memory ❤️";
+
+
+            photoGallery.appendChild(img);
+
+        }
+    );
+
+
+    /* Show surprise */
+
+    surprise.style.display =
+        "block";
+
+
+    openButton.style.display =
+        "none";
+
+}
+
+
+
+/* =========================================================
+   FLOATING HEARTS
+   ========================================================= */
+
+function createHeart() {
+
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.className =
+        "heart";
+
+
+    heart.innerHTML =
+        "❤️";
+
+
+    heart.style.left =
+        Math.random() * 100 + "%";
+
+
+    heart.style.fontSize =
+        (12 + Math.random() * 20) + "px";
+
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+
+    document
+        .querySelector(".hearts")
+        .appendChild(heart);
+
+
+    setTimeout(
+        function() {
+
+            heart.remove();
+
+        },
+        10000
+    );
+
+}
+
+
+setInterval(createHeart, 900);
+
+
+
+/* Start website */
+
+loadDay();
+
+</script>
+
+</body>
+</html>
